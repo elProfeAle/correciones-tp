@@ -25,7 +25,7 @@
     },
     "314": {
         "nombre": "BUSTOS MINETTI",
-        "correccion": ""
+        "correccion": "Trabajo Práctico no entregado."
     },
     "944": {
         "nombre": "CHOCO",
@@ -37,35 +37,35 @@
     },
     "701": {
         "nombre": "DE LA SERNA",
-        "correccion": ""
+        "correccion": "Excelente trabajo, no se encontraron errores."
     },
     "966": {
         "nombre": "DELSOL",
-        "correccion": ""
+        "correccion": "Trabajo Práctico no entregado."
     },
     "300": {
         "nombre": "DETHIER CONTINELLI",
-        "correccion": ""
+        "correccion": "Trabajo Práctico no entregado."
     },
     "725": {
         "nombre": "DÍAZ",
-        "correccion": ""
+        "correccion": "//Recordá que en querySelector se usa # para id y . para class \n //En este caso te faltan los # \n let edad = document.querySelector('ingreseEdad') \n let botonIngresar1 = document.querySelector('ingresar') \n let edadUsuario = document.querySelector('edadUsuario') \n botonIngresar1.onclick = function (){ \n     if ((edad.value > 6) && (edad.value < 11)) { \n          \n     } else { \n          \n     } \n } \n //Falta el resto de ejercicios \n "
     },
     "884": {
         "nombre": "FARIAS VERA",
-        "correccion": ""
+        "correccion": "Excelente trabajo, no se encontraron errores. Me gustó que combinaste el ejercicio de las edades."
     },
     "337": {
         "nombre": "FERNÁNDEZ OLIVERO",
-        "correccion": ""
+        "correccion": "Ejercicios 1 al 3 corregidos en clase, terminar el resto."
     },
     "206": {
         "nombre": "GARCÍA MONTES",
-        "correccion": ""
+        "correccion": "Trabajo Práctico no entregado."
     },
     "535": {
         "nombre": "GARCÍA ROJAS",
-        "correccion": ""
+        "correccion": "Trabajo Práctico no entregado."
     },
     "367": {
         "nombre": "GARRO",
