@@ -1,138 +1,138 @@
 {
-    "49481692": {
-        "nombre": "ALCARÁZ, CESAR BENJAMÍN",
+    "692": {
+        "nombre": "ALCARÁZ",
         "correccion": ""
     },
-    "50523647": {
-        "nombre": "ALONSO, JERÓNIMO",
+    "647": {
+        "nombre": "ALONSO",
         "correccion": "//Corrección del ejercicio\n//El identificador está mal escrito, es Nombres y no Nombre2\nlet nombres = document.querySelector('#Nombre2')\nlet botonVerificar2 = document.querySelector('#botonVerificar2')\n//El identificador está mal escrito, es nombreUsuarios y no nombreUsuarios2\nlet nombreUsuarios = document.querySelector('#nombreUsuario2')\n\nbotonVerificar2.onclick = function () {\n    if (nombreUsuarios.value == 'Nahuel' || nombreUsuarios.value == 'marcos' ) {\n        //Acá cuando tomás el valor del input, tenés que poner .value al final\n        //Pusiste 'Bienvenido '+ nombreUsuarios cuando tiene que ser 'Bienvenido '+ nombreUsuarios.value\n        //¿Se nota la diferencia?\n        nombres.textContent = 'Bienvenido '+ nombreUsuarios +' ¿cómo estás?'\n    } else {\n        nombres.textContent = 'Bienvenido Usuario'\n    }\n}\n\n//Falta el resto de los ejercicios"
     },
-    "50823776": {
-        "nombre": "ARRIGONE, BRUNELLA",
+    "776": {
+        "nombre": "ARRIGONE",
         "correccion": "//Actividad 2-3\n//Aca tenes varios errores en los id que colocaste en el querySelector, tenes que fijarte bien\n//Todos tus id en html comienzan en mayuscula y aca los pones en minuscula\n//Este seria #BotonNombre\nlet botonNombre = document.querySelector('#botonNombre')\n//Aca #NombreUsuario\nlet nombreUsuario = document.querySelector('#nombreUsuario')\n//Aca #Nombre\nlet nombre = document.querySelector('#nombre')\n//Fijate que tu variable es botonNombre con la b minuscula\n//y aca la pusiste con B mayuscula\nBotonNombre.onclick = function () {\n    //Esta mal escrita la condición, tenes que poner nombreUsuario.value en las dos partes de la comparación\n    //quedaría de esta manera: \n    // if (nombreUsuario.value == 'Nahuel' || nombreUsuario.value == 'Marcos') {\n    if (nombreUsuario.value == 'Nahuel' || 'Marcos') {\n        //Tu variable es nombre con n minuscula y la escribiste con N mayuscula\n        Nombre.textContent = '\"¿Bienvenido Nahuel o Marcos, ¿Como estas?\"'\n    } else {\n        //Tu variable es nombre con n minuscula y la escribiste con N mayuscula\n        Nombre.textContent = 'Bienvenido Usuario'\n    }\n}\n\n//Actividad 4\n\nlet Numero = document.querySelector('#Numero')\nlet botonNumero = document.querySelector('#botonNumero')\nlet numeroUsuario = document.querySelector('#numeroUsuario')\n\nbotonNumero.onclick = function () {\n    if (Numero.value > 0) {\n        //Aca textContent es una propiedad, no una función, por lo que no se usa (), se usa =\n        //quedaria de esta manera: Numero.textContent = 'El numero es positivo'\n        Numero.textContent('El numero es positivo')\n    } else { \n        //Acá lo mismo, quedaria de esta manera:  Numero.textContent = 'El numero es negativo'\n        Numero.textContent('El numero es negativo') }\n    if (Numero.value == 0) {\n        //Acá lo mismo, quedaria de esta manera:  Numero.textContent = 'El numero es cero'\n        Numero.textContent('El numero es cero')\n    }\n}\n\n//Falta el resto de los ejercicios"
     },
-    "50418187": {
-        "nombre": "BASANTE SABAROTS, ANTONIA E",
+    "187": {
+        "nombre": "BASANTE SABAROTS",
         "correccion": "//Actividad 2/3 \n//Aca tenes varios errores en los id que colocaste en el querySelector, tenes que fijarte bien \n//Todos tus id en html comienzan en mayuscula y aca los pones en minuscula \n//Este seria #BotonNombre \nlet botonNombre = document.querySelector('#botonNombre') \n//Aca #NombreUsuario \nlet nombreUsuario = document.querySelector('#nombreUsuario') \n//Aca #Nombre \nlet nombre = document.querySelector('#nombre') \n//Fijate que tu variable es botonNombre con la b minuscula \n//y aca la pusiste con B mayuscula \nBotonNombre.onclick = function () { \n    //Esta mal escrita la condición, tenes que poner nombreUsuario.value en las dos partes de la comparación \n    //quedaría de esta manera:  \n    // if (nombreUsuario.value == 'German' || nombreUsuario.value == 'Marcos') { \n    if (nombreUsuario.value == 'German' || 'Marcos') { \n        //Tu variable es nombre con n minuscula y la escribiste con N mayuscula \n        Nombre.textContent = '¿Bienvenido Nahuel o Marcos, ¿Como estas?' \n    } else { \n        //Tu variable es nombre con n minuscula y la escribiste con N mayuscula \n        Nombre.textContent = 'Bienvenido Usuario' \n    } \n} \n//Actividad 4 \n//Numero es el titulo donde mostrar el resultado \nlet Numero = document.querySelector('#Numero') \nlet botonNumero = document.querySelector('#botonNumero') \n//numeroUsuario es el input donde el usuario ingresa el numero \nlet numeroUsuario = document.querySelector('#numeroUsuario') \nbotonNumero.onclick = function () { \n    //Aca tenes que poner numeroUsuario.value en las dos condiciones     \n    if (Numero.value > 0) { \n        //Para el textContent tenes que usar el signo = y no el ()     \n        Numero.textContent('El numero es positivo') \n    } else { \n        Numero.textContent('El numero es negativo') \n    } \n    //Aca tenes que poner numeroUsuario.value, porque ahi esta  \n    // el valor que ingresa el usuario  \n    if (Numero.value == 0) { \n    //Para el textContent tenes que usar el signo = y no el ()     \n        Numero.textContent('El numero es cero') \n    } \n} \n//Actividad 5  \n//Aca volves a confundir las cosas \n//Esta variable Edad tiene el h1 \nlet Edad = document.querySelector('#Edad') \nlet botonEdad2 = document.querySelector('#botonEdad2') \n//En cambio numeroEdad es el input donde el usuario ingresa su edad \nlet numeroEdad = document.querySelector('#numeroEdad2') \nbotonEdad.onclick = function () { \n    //Pero aca comparas con la variable Edad que es el h1 \n    //Cuando debes comparar con el input, el cual tiene el numero \n    //Seria asi: if (numeroEdad.value >= 6 && numeroEdad.value <= 11) { \n    if (Edad.value >= 6 && Edad.value <= 11) { \n        //Para el textContent tenes que usar el signo = y no el () \n        Numero.textContent('Eres un niño') \n        //mismo error que arriba \n    } else if ((Edad.value >= 6) && (Edad.value <= 11)) { \n        Numero.textContent('Eres un niño') \n    } \n}  \n//Falta el resto de ejercicios, en el html esta mal linkeado el javascript usas link <link rel='stylesheet' href='tp10.js'> cuando tenes que usar script <script src='app.js'></script>"
     },
-    "50629802": {
-        "nombre": "BEGA, JOAQUÍN",
+    "802": {
+        "nombre": "BEGA",
         "correccion": "/*Esta mal el html, copias y pegas toda la estructura del HTMl, cuando debes copiar y pegar el contenido del body.  \n RE-LEER TEORÍA INICIAL*/ \n let titulo = document.querySelector('#resultado') \n let botonEdad = document.querySelector('#botonEdad') \n let edadUsuario = document.querySelector('#edadUsuario') \n botonEdad.onclick = function () { \n     //Escribo lo que quiero ejecutar \n     if (edadUsuario.value >= 18) { \n         titulo.textContent = 'Sos mayor de edad' \n     } else { \n         titulo.textContent = 'Sos menor de edad' \n     } \n } \n //Los ID no pueden tener espacios, deben ser todo junto o con guion bajo \n //Faltan los # en los querySelector de los ID  \n //Este quedaria asi: document.querySelector('#nombreDelUsuario') \n let nombredelusuario = document.querySelector('nombre del usuario') \n let botonnombre = document.querySelector('botonnombre') \n let nombreusuario = document.querySelector('nombreusuario') \n botonnombre.onclick = function () { \n     //escribo lo que quiero ejecutar \n     if (nombreusuario.value = 'nahuel') { \n         titulo.textContent = 'bienvenido nahuel' \n     } else { \n         nombredelusuario.textContent = 'bienvenido usuario' \n     } \n } \n //Estas variable esta declara arriba, no podes declararla de nuevo \n //Mismos errores que antes, faltan los # en los querySelector \n let nombredelusuario = document.querySelector('nombre del usuario2') \n let botonnombre = document.querySelector('botonnombre2') \n let nombreusuario = document.querySelector('nombreusuario2') \n botonnombre.onclick = function () { \n     //escribo lo que quiero ejecutar \n     //Acá estas asignando un valor, no estas comparando. El operador de comparación es == \n     //Ademas, para comparar multiples valores, tenes que poner la variable en cada comparacion \n     //Deberia quedar asi: if (nombreusuario2.value == 'nahuel' || nombreusuario2.value == 'marcos') \n     if (nombreusuario2.value = 'nahuel' || 'marcos') { \n         titulo.textContent = 'bienvenido' + nombreusuario2 + '¿como estas?' \n     } else { \n         nombredelusuario.textContent = 'bienvenido usuario' \n     } \n } \n //Variables declaradas, pero no inicializadas, no tienen ningun valor asignado \n //Deberias asignarles el valor del input, el titulo y el boton, con document.querySelector \n let numero \n let botonnumero \n let numeroingresado \n botonnumero.onclick = function () { \n     //coloco el numero \n     if (numeroingresado.value >= 0) { \n         titulo.textContent = 'es un numero positivo' \n     } else { \n         titulo.textContent = 'es un numero negativo' \n     } \n } \n //Variables declaradas, pero no inicializadas, no tienen ningun valor asignado \n //Deberias asignarles el valor del input, el titulo y el boton, con document.querySelector \n let edad \n let botonEdad \n let edadingresada \n botonEdad.onclick = function () { \n     //coloco mi edad \n     //Falta el signo de apertura de la llave en el if \n     if (edadingresada.value >= 6 || edadingresada.value <= 11) \n } else { \n     titulo.textContent = 'eres un niño' \n //Falta el simbolo de cierre del else \n     //Falta el simbolo de apertura de la llave en el if \n     if (edadingresada.value >= 12 || edadingresada.value <= 18) \n         } else { \n     titulo.textContent = 'eres un adolescente' \n     if (edadingresada.value >= 19 || edadingresada.value <= 26) \n } else { \n     titulo.textContent = 'eres un joven' \n     if (edadingresada.value >= 27 || edadingresada.value <= 59) \n         } else { \n     titulo.textContent = 'eres un adulto' \n     if (edadingresada.value >= 60) \n         } else { \n     titulo.textContent = 'eres un anciano' \n } \n //Mismos problemas que antes, las variables estan declaradas pero no inicializadas \n //Deberias asignarles el valor del input, el titulo y el boton, con document.querySelector \n let dia \n let botondia \n let diaingresado \n botonnumero.onclick = function () { \n     //coloco el dia \n     //Acá estas asignando un valor, no estas comparando. El operador de comparación es == \n     //Ademas, para comparar multiples valores, tenes que poner la variable en cada comparacion \n     //Deberia quedar asi: if (numeroingresado.value == 'lunes' || numeroingresado.value == 'martes' || numeroingresado.value == 'miercoles' || numeroingresado.value == 'jueves' || numeroingresado.value == 'viernes') \n     if (numeroingresado.value = 'lunes' || numeroingresado.value = 'martes' || numeroingresado.value = 'miercoles' || numeroingresado.value = 'jueves' || numeroingresado.value = 'viernes') { \n         titulo.textContent = 'es un numero dia laborable' \n     } else { \n         //Falta el simbolo de apertura de la llave en el if \n         if (numeroingresado.value = 'sabado' || numeroingresado.value = 'domingo') \n         titulo.textContent = 'es un dia de descanso' \n     } \n } \n //Mismos problemas que antes, revisar y releer teoria \n let contraseña \n let botoncontraseña \n let contraseñaingresada \n botoncontraseña.onclick = function () { \n     //coloco la contraseña \n     if (contraseñaingresada.value = 'secreto') \n         titulo.textContent = 'acceso concedido' \n } else { \n     titulo.textContent = 'acceso denegado' \n } \n "
     },
-    "50531287": {
-        "nombre": "BORDA, MARTINIANO",
+    "287": {
+        "nombre": "BORDA",
         "correccion": "let titulo = document.querySelector('#resultado') \n let botonEdad = document.querySelector('#botonEdad') \n let edadUsuario = document.querySelector('#edadUsuario') \n botonEdad.onclick = function () { \n     //Escribo lo que quiero ejecutar \n     if (edadUsuario.value >= 18) { \n         titulo.textContent = 'Sos mayor de edad' \n     } else { \n         titulo.textContent = 'Sos menor de edad' \n     } \n } \n //Variable declarada varias veces, tenes que declarar una sola vez la variable \n //el identificador del querySelector tiene que ser igual al del HTML, y no puede tener espacios \n //En este caso seria #nombreUsuario y #botonNombre \n let nombre = document.querySelector ('nombre del usuario') \n let botonnombre = document.querySelector ('ingrese su nombre') \n botonnombre. onclick = function () { \n } \n //Esto deberia ir dentro de la funcion del boton \n if (nombreusuario.vale = 'nahuel') { \n     //es textContent no textconten \n titulo.textconten = 'bienbenido nahuel' \n } else { \n     titulo.textContent = 'bienbenido usuario' \n } \n let nombre = document.querySelector ('nombre usuario') \n let nombre = document.querySelector ('ingrese su nombre') \n botonnombre. onclick = function (){ \n } \n //Aca el mismo problema \n if (nombreusuario.vale = 'nahuel o marcos') { \n  titulo.textconten = 'bienbenido nahuel' \n } else { \n     titulo.textconten = 'bienbenido marcos' \n }    \n "
     },
-    "50373314": {
-        "nombre": "BUSTOS MINETTI, ANTONIO",
+    "314": {
+        "nombre": "BUSTOS MINETTI",
         "correccion": ""
     },
-    "50523944": {
-        "nombre": "CHOCO, DELFINA",
+    "944": {
+        "nombre": "CHOCO",
         "correccion": "//Te falta asignarle un nombre a las variables \n //Ejemplo: let titulonumero = document.querySelector('#titulonumero') \n let = document.querySelector('#titulonumero') \n let = document.querySelector('#numero') \n let = document.querySelector('#verificarnum') \n verificarnumero.onclick= function () { \n     //Cuando compares, tenes que utilizar el .value \n     //Ejemplo: if (numero.value == 0) { \n if (numero == 0) { \n     //Es textContent no textcontent, respeta las mayusculas \n     titulonumero.textcontent='el numero es 0' \n } else if (simbolonumero<=0 ){ \n      titulonumero.textcontent='el numero es negativo' \n } else if (numero >= 0) \n  titulonumero.textcontent='el numero es positivo' \n } \n  //Mismo problema en casi todos los ejercicios"
     },
-    "50525419": {
-        "nombre": "DE LA CRUZ, JUAN IGNACIO",
+    "419": {
+        "nombre": "DE LA CRUZ",
         "correccion": "let Titulo = document.querySelector('#resultado') \n let Parafo = document.querySelector('#Parafo') \n let BotonNota = document.querySelector('#BotonNota') \n let NotaFinal = document.querySelector('#NotaFinal') \n //Aca debería ser BotonNota en lugar de botonEdad \n botonEdad.onclick = function () { \n     if (edadUsuario.value >= 6) { \n         //Respeta las mayusculas y minusculas, tu variable comienza con \n         //mayuscula, y es Titulo \n         titulo.textContent = 'Estas aprobado,Felicidades!!' \n     } else { \n         titulo.textContent = 'Estas desaprobado,para la proxima' \n     } \n } \n "
     },
-    "50799701": {
-        "nombre": "DE LA SERNA, LILA",
+    "701": {
+        "nombre": "DE LA SERNA",
         "correccion": ""
     },
-    "50823966": {
-        "nombre": "DELSOL, BENICIO",
+    "966": {
+        "nombre": "DELSOL",
         "correccion": ""
     },
-    "50525300": {
-        "nombre": "DETHIER CONTINELLI, IVO",
+    "300": {
+        "nombre": "DETHIER CONTINELLI",
         "correccion": ""
     },
-    "50823725": {
-        "nombre": "DÍAZ, VICTORIA",
+    "725": {
+        "nombre": "DÍAZ",
         "correccion": ""
     },
-    "50823884": {
-        "nombre": "FARIAS VERA, EDDA",
+    "884": {
+        "nombre": "FARIAS VERA",
         "correccion": ""
     },
-    "50525337": {
-        "nombre": "FERNÁNDEZ OLIVERO, AMPARO",
+    "337": {
+        "nombre": "FERNÁNDEZ OLIVERO",
         "correccion": ""
     },
-    "50525206": {
-        "nombre": "GARCÍA MONTES, AUGUSTO",
+    "206": {
+        "nombre": "GARCÍA MONTES",
         "correccion": ""
     },
-    "50523535": {
-        "nombre": "GARCÍA ROJAS, DELFINA A",
+    "535": {
+        "nombre": "GARCÍA ROJAS",
         "correccion": ""
     },
-    "50525367": {
-        "nombre": "GARRO, SANTIAGO",
+    "367": {
+        "nombre": "GARRO",
         "correccion": ""
     },
-    "50525210": {
-        "nombre": "GÓMEZ WALS, JUAN AUGUSTO",
+    "210": {
+        "nombre": "GÓMEZ WALS",
         "correccion": ""
     },
-    "50523923": {
-        "nombre": "GONZÁLEZ MARUSICH, BAUTISTA",
+    "923": {
+        "nombre": "GONZÁLEZ MARUSICH",
         "correccion": ""
     },
-    "50523564": {
-        "nombre": "HERNÁEZ, JOAQUÍN SIMÓN",
+    "564": {
+        "nombre": "HERNÁEZ",
         "correccion": ""
     },
-    "51220704": {
-        "nombre": "LAMBERT ORIANI, MALENA",
+    "704": {
+        "nombre": "LAMBERT ORIANI",
         "correccion": ""
     },
-    "50525215": {
-        "nombre": "LARDONE VARGAS, JAZMÍN",
+    "215": {
+        "nombre": "LARDONE VARGAS",
         "correccion": ""
     },
-    "50523697": {
-        "nombre": "MARTÍN CARO, ERNESTINA TANIA H.",
+    "697": {
+        "nombre": "MARTÍN CARO",
         "correccion": ""
     },
-    "50373411": {
-        "nombre": "MORALES MANDRILE, AGUSTINA",
+    "411": {
+        "nombre": "MORALES MANDRILE",
         "correccion": ""
     },
-    "50823623": {
-        "nombre": "MORÁN, SOFÍA",
+    "623": {
+        "nombre": "MORÁN",
         "correccion": ""
     },
-    "50523540": {
-        "nombre": "PERI, BAUTISTA AGUSTÍN",
+    "540": {
+        "nombre": "PERI",
         "correccion": ""
     },
-    "50373216": {
-        "nombre": "REIDEL, PÍA VALENTINA",
+    "216": {
+        "nombre": "REIDEL ",
         "correccion": ""
     },
-    "50987723": {
-        "nombre": "ROLDAN, MARTINA",
+    "723": {
+        "nombre": "ROLDAN",
         "correccion": ""
     },
-    "50373383": {
-        "nombre": "ROMERO, VALENTINA",
+    "383": {
+        "nombre": "ROMERO",
         "correccion": ""
     },
-    "50823743": {
-        "nombre": "SAN MARTÍN, FELICIANO HUGO",
+    "743": {
+        "nombre": "SAN MARTÍN",
         "correccion": ""
     },
-    "50823550": {
-        "nombre": "SÁNCHEZ OLLO, GENARO",
+    "550": {
+        "nombre": "SÁNCHEZ OLLO",
         "correccion": ""
     },
-    "50525361": {
-        "nombre": "SOSA, BENICIO",
+    "361": {
+        "nombre": "SOSA",
         "correccion": ""
     },
-    "50523974": {
-        "nombre": "VALLEJOS, SANTINO SEGUNDO",
+    "974": {
+        "nombre": "VALLEJOS",
         "correccion": ""
     }
 }
