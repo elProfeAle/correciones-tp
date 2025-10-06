@@ -33,7 +33,7 @@
     },
     "50525419": {
         "nombre": "DE LA CRUZ, JUAN IGNACIO",
-        "correccion": ""
+        "correccion": "let Titulo = document.querySelector('#resultado') \n let Parafo = document.querySelector('#Parafo') \n let BotonNota = document.querySelector('#BotonNota') \n let NotaFinal = document.querySelector('#NotaFinal') \n //Aca debería ser BotonNota en lugar de botonEdad \n botonEdad.onclick = function () { \n     if (edadUsuario.value >= 6) { \n         //Respeta las mayusculas y minusculas, tu variable comienza con \n         //mayuscula, y es Titulo \n         titulo.textContent = 'Estas aprobado,Felicidades!!' \n     } else { \n         titulo.textContent = 'Estas desaprobado,para la proxima' \n     } \n } \n "
     },
     "50799701": {
         "nombre": "DE LA SERNA, LILA",
