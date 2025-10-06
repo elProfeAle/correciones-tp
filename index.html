@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Correcciones de ejercicios</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+
+<style>
+  body {
+    font-family: 'Segoe UI', Consolas, monospace;
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+  }
+  h2 {
+    color: #61dafb;
+  }
+  input, button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    margin-right: 10px;
+  }
+  input {
+    width: 200px;
+  }
+  button {
+    background: #61dafb;
+    color: #000;
+    cursor: pointer;
+  }
+  pre {
+    background: #252526;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+</style>
+</head>
+
+<body>
+  <h2>Consultar corrección</h2>
+  <label for="dni">DNI:</label>
+  <input type="text" id="dni" placeholder="Ingrese su DNI">
+  <button id="buscar">Buscar</button>
+
+  <h3 id="nombre"></h3>
+  <pre><code id="resultado" class="language-javascript"></code></pre>
+
+  <!-- 📘 Librerías de PrismJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+
+  <script>
+    document.querySelector('#buscar').onclick = async () => {
+      //Trim sirve para eliminar espacios al inicio y al final
+      let dni = document.getElementById('dni').value.trim();
+      //Leemos el archivo JSON
+      let res = await fetch('resultados.json');
+      //Parseamos el JSON a un objeto de JavaScript
+      let datos = await res.json();
+
+      let salida = document.getElementById('resultado');
+      let nombre = document.getElementById('nombre');
+      //Si el DNI existe en el JSON, mostramos la corrección
+      if (datos[dni]) {
+        nombre.textContent = datos[dni].nombre;
+        salida.innerHTML = Prism.highlight(datos[dni].correccion, Prism.languages.javascript, 'javascript');
+      } else {
+        nombre.textContent = 'No se encontró corrección para ese DNI.';
+        salida.textContent = '';
+      }
+    };
+  </script>
+</body>
+</html>
