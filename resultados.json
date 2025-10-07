@@ -69,11 +69,11 @@
     },
     "367": {
         "nombre": "GARRO",
-        "correccion": ""
+        "correccion": "Mismo error que Basante. \n //Numero es el titulo donde mostrar el resultado \nlet Numero = document.querySelector('#Numero') \nlet botonNumero = document.querySelector('#botonNumero') \n//numeroUsuario es el input donde el usuario ingresa el numero \nlet numeroUsuario = document.querySelector('#numeroUsuario') \nbotonNumero.onclick = function () { \n    //Aca tenes que poner numeroUsuario.value en las dos condiciones     \n    if (Numero.value > 0) { \n        //Para el textContent tenes que usar el signo = y no el ()     \n        Numero.textContent('El numero es positivo') \n    } else { \n        Numero.textContent('El numero es negativo') \n    } \n    //Aca tenes que poner numeroUsuario.value, porque ahi esta  \n    // el valor que ingresa el usuario  \n    if (Numero.value == 0) { \n    //Para el textContent tenes que usar el signo = y no el ()     \n        Numero.textContent('El numero es cero') \n    } \n} \n//Actividad 5  \n//Aca volves a confundir las cosas \n//Esta variable Edad tiene el h1 \nlet Edad = document.querySelector('#Edad') \nlet botonEdad2 = document.querySelector('#botonEdad2') \n//En cambio numeroEdad es el input donde el usuario ingresa su edad \nlet numeroEdad = document.querySelector('#numeroEdad2') \nbotonEdad.onclick = function () { \n    //Pero aca comparas con la variable Edad que es el h1 \n    //Cuando debes comparar con el input, el cual tiene el numero \n    //Seria asi: if (numeroEdad.value >= 6 && numeroEdad.value <= 11) { \n    if (Edad.value >= 6 && Edad.value <= 11) { \n        //Para el textContent tenes que usar el signo = y no el () \n        Numero.textContent('Eres un niño') \n        //mismo error que arriba \n    } else if ((Edad.value >= 6) && (Edad.value <= 11)) { \n        Numero.textContent('Eres un niño') \n    } \n}  \n//Falta el resto de ejercicios, en el html esta mal linkeado el javascript usas link <link rel='stylesheet' href='tp10.js'> cuando tenes que usar script <script src='app.js'></script>"
     },
     "210": {
         "nombre": "GÓMEZ WALS",
-        "correccion": ""
+        "correccion": "Trabajo Práctico no entregado."
     },
     "923": {
         "nombre": "GONZÁLEZ MARUSICH",
@@ -81,7 +81,7 @@
     },
     "564": {
         "nombre": "HERNÁEZ",
-        "correccion": ""
+        "correccion": "botonverificar4.onclick = function () { \n     //Simon fijate que en la segunda condicion te falta el .value \n     //Te pasa en todas las condiciones compuestas \n     if ((edadpersona.value >= 6) && (edadpersona <= 8)) { \n         titulo4.textContent = 'eres un niño' \n         //Aca tambien, seria edadpersona.value <=18 \n     } else if ((edadpersona.value >= 12) && (edadpersona <= 18)) { \n         titulo4.textContent = 'eres un adolescente' \n         //Aca tambien, seria edadpersona.value <=26 \n     } else if ((edadpersona.value >= 19) && (edadpersona <= 26)) { \n         titulo4.textContent = 'eres joven' \n         //Aca tambien, seria edadpersona.value <=59 \n     } else if ((edadpersona.value >= 27) && (edadpersona <= 59)) { \n         titulo4.textContent = 'eres un adulto' \n     } else if (edadpersona.value >= 60) { \n         titulo4.textContent = 'eres un anciano' \n     } \n } \n "
     },
     "704": {
         "nombre": "LAMBERT ORIANI",
