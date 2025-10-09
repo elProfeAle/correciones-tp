@@ -85,23 +85,23 @@
     },
     "704": {
         "nombre": "LAMBERT ORIANI",
-        "correccion": ""
+        "correccion": "botonnombre.onclick = function () { \n     //Esta condición esta mal escrita, debería ser: \n     //if (nombre.value == 'Marcos' || nombre.value == 'Nahuel')  \n     //Tenes que usar la variable nombre.value en las dos comparaciones \n     if (nombre.value == 'Marcos' || 'Nahuel') { \n         //Aca utilizas nombre, pero solo tiene un elemento input, por lo que \n         //deberías usar nombre.value para obtener el valor ingresado \n         //Esto quedaría así: \n         //titulonombre.textContent = 'Bienvenido ' + nombre.value + '¿cómo estás?' \n         titulonombre.textContent = 'Bienvenido ' + nombre + '¿cómo estás?' \n     } else { \n         titulonombre.textContent = 'Bienvenido ' + nombre \n     } \n } \n //Falta el resto de ejercicios \n "
     },
     "215": {
         "nombre": "LARDONE VARGAS",
-        "correccion": ""
+        "correccion": "//Acá falta el punto para utilizar el evento onclick \n //Quedaría así: botonEdad.onclick = function () { ... } \n //Además de que confundis las llaves: {} con los corchetes: [] \n //Reemplaza todos los corchetes por llaves \n  botonEdad onclick = function () [ \n  if (edadUsuario.value >= 18) [ \n      titulo.textContent = 'ya sos mayor de edad' \n  ] else [ \n     titulo.content = ' sos menor de edad' \n  ] \n  let titulo = document.querySelector('Bienvenida') \n  let nombreUsuario = document.querySelector ('nombredelusuario') \n  let botonnombre = document.querySelector ('botonnombre') \n  botonnombre.onclick = function () [ \n      if (botonnombre.value = 'Nahuel') [ \n           \n      ] \n "
     },
     "697": {
         "nombre": "MARTÍN CARO",
-        "correccion": ""
+        "correccion": "//Son errores de escritura en los nombres \n //Aca es #resultadoDia y pusiste resultaDia, te falto el do \n let resultadoDia= document.querySelector('#resultaDia') \n let Dia= document.querySelector ('#Dia') \n let con6=document.querySelector ('#con6') \n con6.onclick= function(){ \n     if (Dia.value == 'lunes'|| Dia.value =='martes' || Dia.value =='miercoles'|| Dia.value =='jueves' || Dia.value=='viernes') { \n         resultadoDia.textContent='es un dia laborable' \n     } else { \n         resultadoDia.textContent='es un feriado' \n     } \n } \n //Aca es #resultadoContraseña y pusiste resultaContraseña, te falto el do \n let resultadoContraseña= document.querySelector('#resultaContraseña') \n let Contraseña= document.querySelector ('#Contraseña') \n let con7= document.querySelector('#con7') \n con7.onclick= function(){ \n     if (Contraseña.value=='secreto') { \n         resultadoContraseña.textContent='correcto' \n     } else { \n         resultadoContraseña.textContent='incorrecto' \n     } \n } \n "
     },
     "411": {
         "nombre": "MORALES MANDRILE",
-        "correccion": ""
+        "correccion": "Nombre.onclick=function(){ \n     //NombreUsuario tiene guardado un input, por lo tanto para obtener el valor que el usuario escribio \n     //debemos usar .value para obtener ese valor \n     //La condición se debe escribir así:  \n     //if (NombreUsuario.value == 'Nahuel') { \n     if (NombreUsuario == 'Nahuel') { \n         //Acá estas modificando el texto del boton, cuando en realidad queres modificar el texto del h1 \n         //El cual esta guardado en la variable resultadoNombre \n         Nombre.textContent = 'Bienvenido Nahuel,¿Como etas?' \n     } else { \n         Nombre.textContent = 'Bienvenido Usuario' \n     } \n } \n "
     },
     "623": {
         "nombre": "MORÁN",
-        "correccion": ""
+        "correccion": "Excelente trabajo Sofi!!"
     },
     "540": {
         "nombre": "PERI",
@@ -113,7 +113,7 @@
     },
     "723": {
         "nombre": "ROLDAN",
-        "correccion": ""
+        "correccion": "Buen trabajo, falta el resto de ejercicios!"
     },
     "383": {
         "nombre": "ROMERO",
@@ -121,18 +121,18 @@
     },
     "743": {
         "nombre": "SAN MARTÍN",
-        "correccion": ""
+        "correccion": "//Feli, revisa que para el resto de ejercicios siempre revisas botonEdad, edadUsuario y titulo \n //Te faltan el resto de elementos del sitio"
     },
     "550": {
         "nombre": "SÁNCHEZ OLLO",
-        "correccion": ""
+        "correccion": "//Trabajo hecho con IA. No se permite."
     },
     "361": {
         "nombre": "SOSA",
-        "correccion": ""
+        "correccion": "//Correcciones en comentarios. \n let resultado1 = document.querySelector('#resultado1') \n let Botonedad = document.querySelector('#Edadusuario') \n let Botonsaludo = document.querySelector('Edad') \n Botonsaludo.onclick = function () { \n     if (edad.value > 18) { \n         resultado1.textContent = 'Eres Mayor de edad' \n     } else { \n         //Fijate que arriba mostras el texto en resultado1 y abajo en titulo2, deberia ser igual para ambos casos!!! \n         titulo2.textContent = 'Eres Menor de edad' \n     } \n } \n let resultado2 = document.querySelector('#resultado2') \n let Botonnombre = document.querySelector('#nombre') \n let saludo = document.querySelector('#Saludo') \n Botonnombre.onclick = function () { \n     if (saludo.value == 'Nahuel') { \n         resultado2.textContent = 'Bienvenido Nahuel, ¿cómo estás?' \n     } else { \n         resultado2.textContent = 'Bienvenido usuario' \n     } \n } \n let titulo3 = document.querySelector('#resultado') \n let BotonnombreUsuario2 = document.querySelector('#BotonnombreUsuario2') \n let nombreUsuario2 = document.querySelector('#nombreUsuario2') \n BotonnombreUsuario2.onclick = function () { \n     if (nombreUsuario2.value == 'Nahuel' || nombreUsuario2.value == 'Marcos') { \n         titulo3.textContent = ' Bienvenido' + nombreUsuario2.value + ' ¿cómo estás?' \n     } else { \n         titulo3.textContent = 'Bienvenido' + nombreUsuario2.value \n     } \n } \n let titulo4 = document.querySelector('#resultado3') \n let Botonnumero3 = document.querySelector('#BotonedadUsuario3') \n let edadUsuario = document.querySelector('#edadUsuario') \n Botonnumero3.onclick = function () { \n     //Estas usando el simbolo de mayor al reves, deberia ser > \n     if (edadUsuario.value < 0) { \n         titulo4.textContent = 'El número es positivo' \n         //No pueden ir dos else juntos, al menos uno deberia ser un else if con otra condicion \n         //En este caso else if (edadUsuario.value < 0) es decir, si la edad ingresada por el usuario es menor a 0 \n     } else { \n         textContent = 'El número es negativo' \n     } else { \n         titulo4.textContent = 'el numero es cero' \n     } \n } \n let titulo5 = document.querySelector('#resultado4') \n let BotonedadUsuario4 = document.querySelector('#BotonedadUsuario4') \n let edadUsuario3 = document.querySelector('#edadUsuario') \n BotoedadUsuario3.onclick = function () { } \n //Aca lo mismo,  usas las variable edadUsuario3 con la propiedad .value y despues usas edad que no esta declarada \n //Porque usarias variables diferentes para lo mismo? \n if (edadUsuario3.value <= 12) { \n     titulo5.textContent = 'eres niño' \n } else if (edad == 12 || edad <= 18) { \n     titulo5.textContent = 'eres adolescente' \n } else if (edad == 19 || edad <= 26) { \n     titulo5.textContent = 'eres joven' \n } else if (edad <= 27 || edad <= 59) { \n     titulo5.textContent = 'eres adulto' \n } else { \n     titulo5.textContent = 'eres anciano' \n } \n let titulo6 = document.querySelector('#resultado5') \n let diadelasemana = document.querySelector('#diadelasemana') \n let botondia = document.querySelector('#botondia') \n botondia.onclick = function () { \n     //Porque usas el .value una vez y las otras no? deberia estar siempre que aparece Dia en la condicion  \n     if (Dia.value == 'Lunes' || Dia == 'Martes' || Dia == 'Miercoles' || Dia == 'Jueves' || Dia == 'Viernes') { \n         titulo6.textContent = 'Es un día laborable' \n     } else { \n         titulo6.textContent = 'Es fin de semana' \n     } \n } \n //Aca declaras titulo, pero abajo usas una variable que no existe llamada titulo7 \n let titulo = document.querySelector('#resultado6') \n let contraseña = document.querySelector('#contraseña') \n //El id esta mal escrito, porque comienza con mayuscula \n let botoncontraseña = document.querySelector('#botoncontraseña') \n botoncontraseña.onclick = function () { \n     if (contraseña.value == 'secreto') { \n         titulo7.textContent = 'Acceso concedido' \n     } else { \n         titulo7.textContent = 'Acceso Denegado' \n     } \n } \n //REVISAR Y CORREGIR \n "
     },
     "974": {
         "nombre": "VALLEJOS",
-        "correccion": ""
+        "correccion": "//Titulo esta declara más abajo también, debería declararse una sola vez\nlet titulo = document.querySelector('#resultado')\nlet botonEdad = document.querySelector('#botonEdad')\nlet edadUsuario = document.querySelector('#edadUsuario')\n\nbotonEdad.onclick = function () {\n    if (edadUsuario.value >= 18) {\n        titulo.textContent = 'Sos mayor de edad'\n    } else {\n        titulo.textContent = 'Sos menor de edad'\n    }\n}\n\nlet botonNombre = document.querySelector('#botonNombre');\nlet nombreUsuario = document.querySelector('#nombreUsuario');\nlet mensajeBienvenida = document.querySelector('#mensajeBienvenida');\n\nbotonNombre.onclick = function () {\n    let nombre = nombreUsuario.value;\n    //Aca tenes que usar un operador de comparación (==) no un operador de asignación (=)\n    if (nombre == 'Nahuel') {\n        mensajeBienvenida.textContent = 'Bienvenido Nahuel, ¿cómo estás?';\n    } else {\n        mensajeBienvenida.textContent = 'Bienvenido usuario';\n    }\n}\n\n//Estas declarando nuevamente titulo, cuando debe declararse una sola vez\nlet titulo2 = document.querySelector('#resultado');\nlet botonNumero = document.querySelector('#botonNumero');\nlet numeroUsuario = document.querySelector('#numeroUsuario');\n\nbotonNumero.onclick = function () {\n    let numero = Number(numeroUsuario.value);\n\n    if (numero > 0) {\n        //Los textContent deben ir sin paréntesis\n        titulo2.textContent = 'El número es positivo';\n    } else if (numero < 0) {\n        titulo2.textContent = 'El número es negativo';\n    } else {\n        titulo2.textContent = 'El número es cero';\n    }\n}"
     }
 }
