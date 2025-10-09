@@ -53,22 +53,18 @@
   <h3 id="nombre"></h3>
   <pre><code id="resultado" class="language-javascript"></code></pre>
 
-  <!-- 📘 Librerías de PrismJS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
 
   <script>
     document.querySelector('#buscar').onclick = async () => {
-      //Trim sirve para eliminar espacios al inicio y al final
       let dni = document.getElementById('dni').value.trim();
-      //Leemos el archivo JSON
       let res = await fetch('resultados.json');
-      //Parseamos el JSON a un objeto de JavaScript
+      
       let datos = await res.json();
 
       let salida = document.getElementById('resultado');
       let nombre = document.getElementById('nombre');
-      //Si el DNI existe en el JSON, mostramos la corrección
       if (datos[dni]) {
         nombre.textContent = datos[dni].nombre;
         salida.innerHTML = Prism.highlight(datos[dni].correccion, Prism.languages.javascript, 'javascript');
